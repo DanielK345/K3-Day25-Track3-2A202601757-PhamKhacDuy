@@ -10,11 +10,13 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", default="configs/default.yaml")
     parser.add_argument("--out", default="reports/metrics.json")
+    parser.add_argument("--csv-out", default="reports/metrics.csv")
     args = parser.parse_args()
     config = load_config(args.config)
     metrics = run_simulation(config, load_queries())
     metrics.write_json(args.out)
-    print(f"wrote {args.out}")
+    metrics.write_csv(args.csv_out)
+    print(f"wrote {args.out} and {args.csv_out}")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,106 @@
+{
+  "total_requests": 400,
+  "availability": 0.7375,
+  "error_rate": 0.2625,
+  "latency_p50_ms": 276.71,
+  "latency_p95_ms": 319.1,
+  "latency_p99_ms": 319.3,
+  "fallback_success_rate": 0.4101,
+  "cache_hit_rate": 0.46,
+  "circuit_open_count": 12,
+  "recovery_time_ms": 2474.7867584228516,
+  "estimated_cost": 0.048312,
+  "estimated_cost_saved": 0.184,
+  "scenarios": {
+    "primary_timeout_100": "pass",
+    "primary_flaky_50": "pass",
+    "all_healthy": "pass",
+    "all_providers_down": "pass"
+  },
+  "scenario_metrics": {
+    "primary_timeout_100": {
+      "total_requests": 100,
+      "availability": 0.97,
+      "error_rate": 0.03,
+      "latency_p50_ms": 294.14,
+      "latency_p95_ms": 319.13,
+      "latency_p99_ms": 321.62,
+      "fallback_success_rate": 0.9286,
+      "cache_hit_rate": 0.58,
+      "circuit_open_count": 6,
+      "recovery_time_ms": null,
+      "estimated_cost": 0.01479,
+      "estimated_cost_saved": 0.058,
+      "scenarios": {},
+      "scenario_metrics": {},
+      "cache_comparison": {}
+    },
+    "primary_flaky_50": {
+      "total_requests": 100,
+      "availability": 0.98,
+      "error_rate": 0.02,
+      "latency_p50_ms": 290.1,
+      "latency_p95_ms": 319.1,
+      "latency_p99_ms": 319.11,
+      "fallback_success_rate": 0.9444,
+      "cache_hit_rate": 0.59,
+      "circuit_open_count": 4,
+      "recovery_time_ms": 2474.7867584228516,
+      "estimated_cost": 0.014142,
+      "estimated_cost_saved": 0.059,
+      "scenarios": {},
+      "scenario_metrics": {},
+      "cache_comparison": {}
+    },
+    "all_healthy": {
+      "total_requests": 100,
+      "availability": 1.0,
+      "error_rate": 0.0,
+      "latency_p50_ms": 219.83,
+      "latency_p95_ms": 234.11,
+      "latency_p99_ms": 237.11,
+      "fallback_success_rate": 0.0,
+      "cache_hit_rate": 0.67,
+      "circuit_open_count": 0,
+      "recovery_time_ms": null,
+      "estimated_cost": 0.01938,
+      "estimated_cost_saved": 0.067,
+      "scenarios": {},
+      "scenario_metrics": {},
+      "cache_comparison": {}
+    },
+    "all_providers_down": {
+      "total_requests": 100,
+      "availability": 0.0,
+      "error_rate": 1.0,
+      "latency_p50_ms": 0.0,
+      "latency_p95_ms": 0.0,
+      "latency_p99_ms": 0.0,
+      "fallback_success_rate": 0.0,
+      "cache_hit_rate": 0.0,
+      "circuit_open_count": 2,
+      "recovery_time_ms": null,
+      "estimated_cost": 0.0,
+      "estimated_cost_saved": 0.0,
+      "scenarios": {},
+      "scenario_metrics": {},
+      "cache_comparison": {}
+    }
+  },
+  "cache_comparison": {
+    "without_cache": {
+      "latency_p50_ms": 211.61,
+      "latency_p95_ms": 238.16,
+      "estimated_cost": 0.0598,
+      "estimated_cost_saved": 0.0,
+      "cache_hit_rate": 0.0
+    },
+    "with_cache": {
+      "latency_p50_ms": 214.3,
+      "latency_p95_ms": 237.18,
+      "estimated_cost": 0.02326,
+      "estimated_cost_saved": 0.06,
+      "cache_hit_rate": 0.6
+    }
+  }
+}

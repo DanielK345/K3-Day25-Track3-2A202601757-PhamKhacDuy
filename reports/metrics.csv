@@ -1,0 +1,2 @@
+total_requests,availability,error_rate,latency_p50_ms,latency_p95_ms,latency_p99_ms,fallback_success_rate,cache_hit_rate,circuit_open_count,recovery_time_ms,estimated_cost,estimated_cost_saved,scenario_primary_timeout_100,scenario_primary_flaky_50,scenario_all_healthy,scenario_all_providers_down
+400,0.7375,0.2625,276.71,319.1,319.3,0.4101,0.46,12,2474.7867584228516,0.048312,0.184,pass,pass,pass,pass
